@@ -4,12 +4,12 @@ import 'firebase/auth'
 import 'firebase/database'
 
 var firebaseConfig = {
-    apiKey: "AIzaSyCTRqvQiPJScWCpffMceKKnRd5RCwOSiew",
-    authDomain: "aquesty-44508.firebaseapp.com",
-    databaseURL: "https://aquesty-44508-default-rtdb.firebaseio.com",
-    projectId: "aquesty-44508",
-    storageBucket: "aquesty-44508.appspot.com",
-    messagingSenderId: "32673607974",
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
     appId: "1:32673607974:web:7a532921e2c0ef5f52d1e7"
   };
 
