@@ -8,8 +8,13 @@ aside{
 
     background-color: #835afd;
     color: #fff;
+
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    padding: 120px;
 }
 main{
-    flex: 0;
+    flex: 8;
 }
 }
