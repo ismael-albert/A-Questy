@@ -13,7 +13,7 @@ export function Home() {
        
         <main>
             <div className="main-content">
-                <img src="{logoImg}" alt="aQuesty" />
+                <img src={logoImg} alt="Logo aQuesty" />
                 <button>
                     
                     <img src={googleIconImg} alt="Logo Google" />
@@ -21,7 +21,7 @@ export function Home() {
                     
                     
                 </button>
-                <div>
+                <div className="separator">
                     ou entre em uma sala
                 </div>
                 <form>
