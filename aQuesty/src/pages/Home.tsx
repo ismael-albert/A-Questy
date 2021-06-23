@@ -14,7 +14,7 @@ export function Home() {
         <main>
             <div className="main-content">
                 <img src={logoImg} alt="Logo aQuesty" />
-                <button>
+                <button className="create-room">
                     
                     <img src={googleIconImg} alt="Logo Google" />
                     crie sua sala com o google

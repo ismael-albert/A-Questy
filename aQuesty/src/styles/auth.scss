@@ -69,6 +69,33 @@ main{
         }
     }
 }
+
+.create-room{
+    margin-top: 64px;
+    height: 50px;
+    border-radius:8px ;
+    font-weight: 500;
+    background: #ea4335;
+    color: #FFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    border: 0;
+
+    transition: filter 0.3s;
+    img{
+        margin-right: 5px;
+
+    }
+    &:hover{
+        filter: brightness(0.9);
+    }
+
+}
+
 .separator{
     font-size:14px ;
     color:#a8a8b3;
