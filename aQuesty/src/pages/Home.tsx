@@ -11,7 +11,7 @@ import { Button } from '../components/Button';
 
 export function Home() {
 const history = useHistory();
-
+  
     function navigateToNewRoom(){
         history.push('/rooms/new')
     }
