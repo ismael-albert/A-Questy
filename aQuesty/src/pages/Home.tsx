@@ -14,7 +14,8 @@ import { Button } from '../components/Button';
 export function Home() {
 const history = useHistory();
   
-    function navigateToNewRoom(){
+    function handleCreateRoom(){
+        const provider = new firebase.auth.GoogleA
         history.push('/rooms/new')
     }
 
@@ -29,7 +30,7 @@ const history = useHistory();
         <main>
             <div className="main-content">
                 <img src={logoImg} alt="Logo aQuesty" />
-                <button onClick={navigateToNewRoom} className="create-room">
+                <button onClick={handleCreateRoom} className="create-room">
                     
                     <img src={googleIconImg} alt="Logo Google" />
                     crie sua sala com o google
