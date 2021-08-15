@@ -21,12 +21,10 @@ export function Home(){
         }).catch(err=> {
             console.log("erro na validação do google")
         })
-
        history.push('/rooms/new');
-
     }
 
-    
+
     return (
         <div id="page-auth">
             <aside>
