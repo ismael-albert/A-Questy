@@ -26,6 +26,7 @@ export function Home(){
 
     }
 
+    
     return (
         <div id="page-auth">
             <aside>
