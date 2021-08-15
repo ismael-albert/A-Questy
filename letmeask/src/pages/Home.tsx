@@ -24,7 +24,6 @@ export function Home(){
 
        history.push('/rooms/new');
 
-
     }
 
     return (
