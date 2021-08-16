@@ -6,7 +6,12 @@ import googleIconImg from '../assets/images/google-icon.svg'
 
 import '../styles/auth.scss'
 import { Button } from '../components/Button'
+import { useContext } from 'react'
+import { authContext } from '../App'
+
 export function NewRoom(){
+const { user } = useContext(authContext)
+
     return (
         <div id="page-auth">
             <aside>
@@ -19,7 +24,7 @@ export function NewRoom(){
             <main>
                 <div className="main-content">
                 <img src={logoImg} alt="letmeask" />
-               
+               <h1>{user?.name}</h1>
                <h2>criar uma nova sala</h2>
 
                 <form>

@@ -1,27 +1,27 @@
+import { useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 
-import { auth, firebase } from '../services/firebase'
 
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
 import googleIconImg from '../assets/images/google-icon.svg'
 import '../styles/auth.scss'
 import { Button } from '../components/Button'
+import { authContext } from '../App'
+
 
 
 export function Home(){
     const history = useHistory();
+    const {user, signInWithGoogle} =useContext(authContext)
+    
 
-
-    function handleCreateRoom(){
-        const provider = new firebase.auth.GoogleAuthProvider();
-
-        auth.signInWithPopup(provider).then(result => {
-            console.log(result)
-        }).catch(err=> {
-            console.log("erro na validação do google")
-        })
-       history.push('/rooms/new');
+  async function handleCreateRoom(){
+      
+        if(!user){
+            signInWithGoogle()
+        }
+        history.push('/rooms/new');
     }
 
 
